@@ -1,0 +1,120 @@
+* {
+margin:0;
+padding:0;
+color:rgb(252, 252, 252);
+box-sizing:border-box;
+text-decoration:none;
+}
+body{
+    font-size:100%;
+    width:100vw;
+    height:100vh;
+    background-image:url('/img/88f59dbdc859df9c163af54045e46db58a68ad94_high.webp');
+    background-size: 100%;
+}
+.cabecalho{
+    display:flex;
+    border-bottom:1px solid #ddd;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px;
+    background-color: aqua;
+}
+.cabecalho-imagem{
+    height:72px;
+}
+.cabecalho-menu{
+display: flex;
+gap:32px;
+}
+.cabecalho-menu-item{
+    color:#fff2ef;
+    font-weight: 400;
+    font-size: 18px;
+}
+.text-pag{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.0rem;
+    text-align:center;
+}
+.text{
+    text-align:right;
+    background-color: chocolate;
+    font-size: 2.0rem;
+}
+/* Estilo do carrossel */
+.carrossel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+    
+    .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    }
+    
+    .slide img {
+    width: 100%;
+    display: block;
+    }
+    
+    /* Botões de navegação */
+    .anterior, .proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    }
+    
+    .anterior {
+    left: 10px;
+    }
+    
+    .proximo {
+    right: 10px;
+    }
+    
+    /* Indicadores (pontos de navegação) */
+    .indicadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
+    
+    .indicador {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    }
+    
+    .indicador.ativo {
+    background: #333;
+    }
+    .conteudo-secundario{
+        text-align: right;
+    }
+
+.conteudo-terciario{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.0rem;
+    text-align:right;
+}
+.conteudo-quartenario{
+    text-align:right;
+}
