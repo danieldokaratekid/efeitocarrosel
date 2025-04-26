@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelector('.slides');
     const slideItems = document.querySelectorAll('.slide');
     const btnAnterior = document.querySelector('.anterior');
@@ -37,6 +38,48 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSlide();
         });
     });
+    
+    // Auto-play (opcional)
+    // setInterval(() => {
+    //     currentIndex = (currentIndex + 1) % totalSlides;
+    //     updateSlide();
+    // }, 3000);
+});
+// Adicione no início do arquivo:
+console.log("Script carregado!"); // Verifique se aparece no console
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM carregado!"); // Verifique se aparece
+    
+    const form = document.getElementById("form");
+    console.log("Elemento form:", form); // Deve mostrar o elemento
+    
+    if(!form) {
+        console.error("FORMULÁRIO NÃO ENCONTRADO! Verifique:");
+        console.error("- O ID no HTML está correto?");
+        console.error("- O script está carregando após o elemento?");
+        return;
+    }
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        console.log("Formulário enviado!"); // Verifique se aparece
+        
+        const email = document.getElementById("email");
+        if(!email) {
+            console.error("Campo de email não encontrado!");
+            return;
+        }
+        
+        if(email.value === "") {
+            console.log("Email vazio detectado");
+            // Sua lógica de erro aqui
+        } else {
+            alert("Enviado com sucesso!");
+            form.reset();
+        }
+    });
+});
     
     // Auto-play (opcional)
     // setInterval(() => {
