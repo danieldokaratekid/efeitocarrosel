@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Mr+Dafoe&family=Seaweed+Script&family=Waiting+for+the+Sunrise&display=swap');
 * {
 margin:0;
 padding:0;
@@ -8,17 +9,15 @@ text-decoration:none;
 body{
     font-size:100%;
     width:100vw;
-    height:100vh;
-    background-image:url('/img/88f59dbdc859df9c163af54045e46db58a68ad94_high.webp');
-    background-size: 100%;
+    background-size: 110%;
 }
 .cabecalho{
     display:flex;
     border-bottom:1px solid #ddd;
-    align-items:center;
+    align-items:end;
     justify-content:space-between;
-    padding:24px;
-    background-color: aqua;
+    padding:40px;
+    background:linear-gradient(120deg,#004AAD 0%,#5DE0E6 100%);
 }
 .cabecalho-imagem{
     height:72px;
@@ -33,14 +32,29 @@ gap:32px;
     font-size: 18px;
 }
 .text-pag{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2.0rem;
     text-align:center;
+    background:linear-gradient(120deg,#004AAD 0%,#5DE0E6 100%);
+    font-family:"Seaweed Script", cursive;
 }
+
 .text{
     text-align:right;
-    background-color: chocolate;
+    background:linear-gradient(120deg,#000000 0%,#000000 100%);
     font-size: 2.0rem;
+    
+}
+.text-container {
+    text-align: right; /* Alinha o texto à direita */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 20px; /* Espaço abaixo para o próximo conteúdo */
+}
+
+
+.text {
+    font-size: 2.0rem;
+    color: white; /* Garante que o texto seja legível */
+    margin: 0; /* Remove margens padrão do h2 */
 }
 /* Estilo do carrossel */
 .carrossel {
@@ -108,6 +122,7 @@ gap:32px;
     }
     .conteudo-secundario{
         text-align: right;
+        background:linear-gradient(120deg,#52004b 0%,#056592 100%);
     }
 
 .conteudo-terciario{
@@ -117,4 +132,74 @@ gap:32px;
 }
 .conteudo-quartenario{
     text-align:right;
+}
+.container{
+    border-radius:14px;
+    margin:14px;
+    max-width:300px;
+    width:50%;
+    box-sizing:0.3px 5px rgba(0,0, 0, 0.5);
+    overflow:hidden;
+   background-image:url('/img/911464-landed-beach.jpg');
+   background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width:400px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header{
+    background:linear-gradient(120deg,#004AAD 0%,#5DE0E6 100%);
+    padding:24px;
+    text-align: center;
+    color:#fff;
+}
+.sessao{
+    background:linear-gradient(120deg,#422626 0%,#3a3838 100%);
+}
+
+.form{
+    padding:18px;
+}
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position:relative;
+}
+.form-content:text{
+    display:inline-block;
+    margin-bottom:4px;
+    background-color:#161616;
+}
+.form-content:input{
+    display:block;
+    width:100%;
+    border-radius:8px;
+    border:2px solid #dfdfdf;
+}
+.form-content textarea{
+    width:200px;
+    height:200px;
+    border-radius:2px;
+    color:#333;
+}
+.form-content a{
+    position:absolute;
+    bottom:-8px;
+    left:0;
+    visibility:hidden;
+}
+.form button{
+    background-color:#5900fd;
+    color:#fff;
+    width:100%;
+    border:0;
+    font-size:16px;
+    cursor:pointer;
+    margin-top: 14px;
+}
+.form-content .email{
+    color:#333;
+}
+.image{
+    width:100%;
 }
